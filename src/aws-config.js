@@ -7,8 +7,14 @@ const awsConfig = {
         oauth: {
           domain: "ap-southeast-2bjbastsi3.auth.ap-southeast-2.amazoncognito.com",
           scopes: ["openid", "email", "profile"],
-          redirectSignIn: ["https://jay-yoon10.github.io/canva-asset-hub-dashboard/"],
-          redirectSignOut: ["https://jay-yoon10.github.io/canva-asset-hub-dashboard/"],
+          redirectSignIn: [
+            "http://localhost:5173",
+            "https://jay-yoon10.github.io/canva-asset-hub-dashboard/"
+          ],
+          redirectSignOut: [
+            "http://localhost:5173",
+            "https://jay-yoon10.github.io/canva-asset-hub-dashboard/"
+          ],
           responseType: "code",
         },
       },
